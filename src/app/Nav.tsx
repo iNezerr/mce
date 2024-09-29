@@ -15,10 +15,10 @@ const Navbar: FC = () => {
   return (
     <nav className="relative z-10 mt-10 mx-auto max-w-6xl sm:mx-20 md:mx-20">
       <div className="backdrop-blur-lg bg-white/50 border border-gray-300/30 rounded-xl shadow-md py-4 px-6 flex justify-between items-center">
-        {/* Logo */}
+
         <div className="text-xl font-bold text-gray-800">
           <Link href="/" className="hover:opacity-70">
-            <Image src={"/logo.png"} alt='Logo' width={70} height={90} />
+            <Image src={"/logo.png"} alt='Logo' width={70} height={80} />
           </Link>
         </div>
 
