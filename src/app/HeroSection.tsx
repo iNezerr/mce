@@ -3,7 +3,7 @@ import React from 'react';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center text-center pb-16 px-4 md:px-8 min-h-full mx-40">
+    <section className="relative flex flex-col items-center justify-center text-center py-16 px-4 md:px-8  mx-40">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center md:space-x-16">
 
         {/* Left side - Two student images */}

@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: 'Almarena Neue Display Bold';
+    font-style: Bold;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/fonts/Bold.otf) format('otf');
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

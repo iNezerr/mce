@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+// const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,7 +10,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        // 'titles':["Almarena Neue Display Bold", ...defaultTheme.fontFamily.titles],
+        'display': ['Oswald'],
+      'body': ['"Open Sans"'],
+      }
+    },
   },
   plugins: [],
 }

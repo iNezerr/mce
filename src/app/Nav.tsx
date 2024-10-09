@@ -15,28 +15,27 @@ const Navbar: FC = () => {
   return (
     <nav className="relative z-10 mt-10 mx-auto max-w-6xl sm:mx-20 md:mx-20">
       <div className="backdrop-blur-lg bg-white/50 border border-gray-300/30 rounded-xl shadow-md py-4 px-6 flex justify-between items-center">
-
         <div className="text-xl font-bold text-gray-800">
           <Link href="/" className="hover:opacity-70">
-            <Image src={"/logo.png"} alt='Logo' width={70} height={80} />
+            <Image src={"/logo.png"} alt='Logo' width={70} height={0} />
           </Link>
         </div>
 
         {/* Desktop Navigation Links */}
         <ul className="hidden md:flex space-x-6 text-gray-800">
           <li>
-            <Link href="/suppliers" className="hover:text-gray-500">
-              Suppliers
+            <Link href="/programmes" className="hover:text-gray-500">
+              Programmes
             </Link>
           </li>
           <li>
-            <Link href="/careers" className="hover:text-gray-500">
-              Careers
+            <Link href="/scholarships" className="hover:text-gray-500">
+              Scholarships
             </Link>
           </li>
           <li>
-            <Link href="/news-insights" className="hover:text-gray-500">
-              News & Insights
+            <Link href="/community" className="hover:text-gray-500">
+              Community
             </Link>
           </li>
           <li>
@@ -47,7 +46,7 @@ const Navbar: FC = () => {
         </ul>
 
         {/* Language Switcher */}
-        <div className="flex items-center space-x-2 text-gray-800">
+        <div className="flex items-center space-x-2 text-gray-800 cursor-pointer">
           <span className="hidden md:inline">English</span>
           <i className="fa-solid fa-globe text-gray-800 hover:opacity-90"></i>
         </div>
@@ -75,7 +74,7 @@ const Navbar: FC = () => {
               </Link>
             </li>
             <li>
-              <Link href="/news-insights" className="hover:text-gray-500">
+              <Link href="/community" className="hover:text-gray-500">
                 News & Insights
               </Link>
             </li>
